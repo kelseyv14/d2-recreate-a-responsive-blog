@@ -1,27 +1,37 @@
+/*Mobile*/
+@media all and (min-width:375px){
+
+    /*the problem is here...I know it.*/
 .card { 
 background-color:#195EE8;
 margin: 0 auto;
-text-align: center;}
+text-align: center;
+margin-top: -50px;
+}
     
+    /*and definetly here as well*/
+
 .img-circle {
+   position: relative;
+    background-position: 50% 50%;
     border-radius: 50%;
-    text-align: center;
-    padding:20vw;
-    width: 50vw;
-    height: 50vw;
-    margin: 15px 15px -50px 15px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 50px;
+ }
 }
 
 .howdie{
-  font-size: 10px;
+  font-size: 8px;
   color: #CBD3CC;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 20px;
 }
 
 .greeting{
 color: white;
-letter-spacing: .5px;
+letter-spacing: .5vw;
 font-size: 6vw;
 
 }
@@ -58,7 +68,7 @@ margin-left: 100px;
     justify-content: flex-start;
     margin-right: 60px;
     font-size:10px;
-    color:white;
+    color: white;
 }
 
 .right{
@@ -67,4 +77,77 @@ margin-left: 100px;
     font-size:12px;
     color: white;
 }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.column {
+color: black;
+text-transform: uppercase;
+font-size: 11px;
+font-weight: 600;
+margin-top: 12vw;
+}
+
+.title {
+    color: #195EE8;
+    padding: 15px;
+}
+
+.paragraph {
+font-size: 10px; 
+font-weight: 100;
+}
+
+.arrow {
+color: #195EE8;
+}
+
+.none{
+list-style-type: none;
+font-weight: 600;
+margin:5px;
+font-size: 10px;
+}
+
+.bleu{
+color: #195EE8;
+letter-spacing:15px; 
+}
+}
+
+/*Tablet*/
+@media all and (min-width:768px){
+
+ .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*Desktop*/
+
+@media all and (min-width:769px){
+
+.title{
+justify-content: space-between;
+
+}
+
+.row {
+display: flex;
+flex-direction: column;
+}
+
+.column{
+flex:1;
+}
+
+
+}
+
+
 
